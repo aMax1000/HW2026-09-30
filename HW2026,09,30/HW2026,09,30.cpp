@@ -9,7 +9,6 @@ private:
     signed int population;
 
 public:
-    // Static constants
     static string language;
     static string capital;
     static string president;
@@ -32,7 +31,8 @@ public:
         count--;
     }
 
-    // Setters
+
+
     void setName(string name) {
         this->name = name;
     }
@@ -43,7 +43,8 @@ public:
         this->population = population;
     }
 
-    // Getters
+
+
     string getName() const {
         return name;
     }
@@ -59,7 +60,8 @@ public:
     }
 };
 
-// Definition of static members
+
+
 string CityUA::language = "ukrainian";
 string CityUA::capital = "kiev";
 string CityUA::president = "Volodimyr Zelenski";
@@ -67,12 +69,10 @@ int CityUA::population_country = 0;
 int CityUA::count = 0;
 
 
-// Testing
+
 int main() {
     CityUA city1("Odesa", 1000000);
     CityUA city2("Lviv", 700000);
-
-    // Test getters
 
     city1.print();
     cout << endl;
@@ -92,7 +92,6 @@ int main() {
     city2.print();
     cout << endl;
 
-    // Test static constants
     cout << "Language: " << CityUA::language << endl;
     cout << "Capital: " << CityUA::capital << endl;
     cout << "President: " << CityUA::president << endl;
